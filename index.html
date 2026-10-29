@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(23, 119, 111);
+        }
+
+        h2 {
+            color: rgb(23, 119, 111);
+        }
+
+        img {
+            width: 180px;
+        }
+
+        h3 {
+            background-color: rgb(191, 201, 198);
+        }
+
+        a {
+            color: rgb(83, 232, 217);
+        }
+
+        thead tr {
+            background-color: rgb(56, 104, 138);
+            color: white;
+            text-align: center
+        }
+
+        tbody tr,
+        tfoot tr {
+            text-align: left;
+        }
+
+        form {
+            width: 400px;
+            padding: 0, 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>John Doe Portfolio</h1>
+    <p style="text-align: center; color: rgb(23, 119, 111);">Professional Web Developer</p>
+    <h2>About Me</h2>
+    <p>Hello! I'm John , a web developer with
+        about 1 year of experience.I work with HTML5 and CSS3,enjoy using Bootstrap to speed up UI work,and iam building
+        my JavaScript fundamentals to add interactivity.I'm eager to learn , write clean code , and create user-friendly
+        interfaces.
+        <br>
+        My journey in web development started during my college years,and since then Ive been continuously learning and
+        adapting to new technologies.I believe in
+        writing clean,efficient code and creating user-friendly interfaces.
+    </p>
+    <h3>skills</h3>
+    <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">React.js</a></li>
+        <li><a href="#">Angular</a></li>
+    </ul>
+    <h2>Experience Timeline</h2>
+    <p style="text-align: center;">Professional Experience Overview</p>
+    <table border="1" style="border-collapse:collapse " cellpadding="8" width="100%">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Logo</th>
+                <th>Role</th>
+                <th>Key Achievements</th>
+                <th>Dates</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">TechCorp Solutions</td>
+                <td rowspan="2"><img src="img/logo1.png" alt="logo of TechCorp Solutions "></td>
+                <td>Senior Full Stack Developer</td>
+                <td>
+                    <ul>
+                        <li>Lead development of scalable applications</li>
+                        <li>Mentor junior developers and ensure code quality</li>
+                        <li>Architect scalable backend services</li>
+                    </ul>
+                </td>
+                <td>Jan 2023-Preser</td>
+            </tr>
+            <tr>
+                <td>Full Stack Developer</td>
+                <td>
+                    <ul>
+                        <li>Level development of web applications</li>
+                        <li>Mentor peers and improve collaboration</li>
+                        <li>Enhanced performance and reliability </li>
+                    </ul>
+                </td>
+                <td>2021-2023</td>
+            </tr>
+            <tr>
+                <td>Digital Agency Pro</td>
+                <td><img src="img/logo2.svg" alt="logo of Digital Agency Pro"></td>
+                <td>Frontend Developer</td>
+                <td>
+                    <ul>
+                        <li>Built user interfaces from mockups</li>
+                        <li>Implemented responsive designs</li>
+                        <li>Conducted code reviews</li>
+                    </ul>
+                </td>
+                <td>2019-2020</td>
+            </tr>
+            <tr>
+                <td>Web Design Studio</td>
+                <td><img src="img/logo3.png" alt="logo of Web Design Studio"></td>
+                <td>Junior Web Developer</td>
+                <td>
+                    <ul>
+                        <li>Maintained existing websites</li>
+                        <li>Fixed bugs and implemented features</li>
+                        <li>Learned best practices</li>
+                    </ul>
+                </td>
+                <td>2019-2020</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total Experience: 5+ years in web development</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me using the form below.I'd love to hear from you!</p>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">Frist Name: *</label>
+            <input type="text" id="fname" name="fname" required>
+            <br>
+            <br>
+            <label for="lname">Last Name: *</label>
+            <input type="text" id="lname" name="lname" required>
+            <br>
+            <br>
+            <label for="mail">Email Address: *</label>
+            <input type="email" id="mail" name="email" required>
+            <br>
+            <br>
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <br>
+            <label for="date">Preferred Meeting Date: </label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <br>
+            <label for="time">Best Time to Contact: </label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Project Details</legend>
+            <label for="project_type">Project Type: * </label>
+            <input type="text" id="project_type" name="project_type" required>
+            <br>
+            <br>
+            <label for="project_des">Project Description: *</label>
+            <input type="text" id="project_des" name="project_description" required>
+            <br>
+            <p>Budget Range</p>
+            <input type="radio" id="Budget1" name="Budget" value="Under $5,000">
+            <label for="Budget1">Under $5,000</label>
+            <br>
+            <input type="radio" id="Budget2" name="Budget" value="$5,000- $10,000">
+            <label for="Budget2">$5,000- $10,000</label>
+            <br>
+            <input type="radio" id="Budget3" name="Budget" value="$10,000-$25,000">
+            <label for="Budget3">$10,000-$25,000</label>
+            <br>
+            <input type="radio" id="Budget4" name="Budget" value="Over $25,000">
+            <label for="Budget4">Over $25,000</label>
+            <br>
+            <br>
+            <label>Services Required(Check all that apply):</label>
+            <br>
+            <br>
+            <input type="checkbox" id="ui" name="services" value="uix">
+            <label for="ui">UI/UX Design</label>
+            <br>
+            <input type="checkbox" id="front" name="services" value="frontend">
+            <label for="front">Frontend Development</label>
+            <br>
+            <input type="checkbox" id="back" name="services" value="backend">
+            <label for="back">Backend Development</label>
+            <br>
+            <input type="checkbox" id="host" name="services" value="hosting">
+            <label for="host">Hosting & Deployment</label>
+            <br>
+            <input type="checkbox" id="support" name="services" value="Maintenance">
+            <label for="support">Maintenance & Support</label>
+            <br>
+            <br>
+            <label for="source">How did you hear about me ?</label>
+            <br>
+            <br>
+            <select name="source" id="source">
+                <option value="select" selected disabled>--select source--</option>
+                <option value="Friend">Friend</option>
+                <option value="linkedin">linkedin</option>
+                <option value="whatsApp">whatsApp</option>
+                <option value="instagram">instagram</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Send Message" style="background-color: rgb(30, 142, 142); color: white;">
+        <input type="reset" value="Clear Form" style="background-color: rgb(120, 31, 31); color: white;">
+    </form>
+</body>
+
+</html>
